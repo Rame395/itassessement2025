@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const registerBtn = document.querySelector('.register-btn');
     const loginBtn = document.querySelector('.Login-btn');
 
-    console.log("Login Button:", loginBtn); // debugging
+    console.log("Login Button:", loginBtn); 
 
     registerBtn.addEventListener('click', () => {
         container.classList.add('active');
