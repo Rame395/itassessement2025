@@ -994,7 +994,20 @@ nav li:first-child{
     }
 }
         
-
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px;
+    }
+            
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+            
+    .social-icons {
+        justify-content: center;
+    }
+}
 
 
     
