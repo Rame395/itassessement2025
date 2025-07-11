@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namaste-Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="Menu.css">
+  
+</head>
+<body>
+        <nav>
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="1.index.html" target="_blank">Home</a></li>
+                <hr>
+                <li><a href="About_us.html" target="_blank">About US</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallary</a></li>
+                <li><a href="Menu.html" target="_blank">Menu</a></li>
+                <li><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li><a href="Contact_Us.html" target="_blank">Contact Us</a></li>
+                <li><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+
+                
+                <!-- <li><a href="#" class="icon"><i class="fa-solid fa-cart-shopping " ></i> Cart</a></li> -->
+                <!-- <li><a href=""><i class="fa-solid fa-cart-shopping">Cart</a></li> -->
+            </ul>
+
+            <ul>
+                <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="1.index.html" target="_blank">Home</a></li>
+                <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
+                <li class="hideOnMobile"> <a href="Gallery.html" target="_blank">Gallery </a></li>
+                <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
+                <li class="hideOnMobile"><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li class="hideOnMobile"><a href="Contact_Us.html" target="_blank">Contact US</a></li>
+                <li class="hideOnMobile"><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user fa-lg"></i> Sign up</a></li>
+                <!-- <li class="hideOnMobile"><a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-lg " ></i> Cart</a></li> -->
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+               const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='none'
+            }
+        </script>
+
+
+
+  <div class="menu-container">
+    <div class="containt1">
+      <h1>OUR MENU</h1>
+      <P class="title">Explore our selection of authentic Nepali beverages and delicious homemade treates.</P>
+      <div class="nav-tab">
+        <div class="tab-container">
+          <a href="#beverages" class="tab">Beverages</a>
+          <a href="#Snacks" class="tab">Snacks</a>
+          <a href="#Desserts" class="tab">Desserts</a>
+        </div>
+      </div>
+      <div id="beverages">
+      <h2>Beverages</h2>
+      <div>
+      <div class="beverages">
+        <div class="beverage-contain">
+          <img src="image-section/Cappuccino-exc.webp" alt="Masala chai">
+          <h3>Nepali Masala Chai</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 60</h3>
+          <script type="module">
+              import { animate, hover } from "https://cdn.jsdelivr.net/npm/motion@12.16.0/+esm"
+
+              hover(".beverage-contain", (element) => {
+                  animate(element, { scale: 1 })
+
+                  return () => animate(element, { scale: 0.95 })
+              })
+          </script>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Butter tea.jpg" alt="Himalayan Butter Tea">
+          <h3>Himalayan Butter Tea</h3>
+          <p>Authentic Tibetan-style tea churned with <br> butter and salt.</p>
+          <h3>RS 90</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Specialty Pour-Over Coffee.jpg" alt="Specialty Pour-Over Coffee">
+          <h3>Specialty Pour-Over Coffee</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 70</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Cardamom-latte-square.jpg" alt="Cardamom Latte">
+          <h3>Cardamom Latte</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 100</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/cinnamon-ginger-tea.jpg" alt="Ginger Honey Tea">
+          <h3>Ginger Honey Tea</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 90</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Indulgent-Hot-Chocolate.jpg" alt="Nepali Hot Chocolate">
+          <h3>Nepali Hot Chocolate</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 180</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/MangoLassi.jpg" alt="Mango Lassi">
+          <h3>Mango Lassi</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>RS 110</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/iced-green-tea-with-mint.jpg" alt="Iced Himalayan Tea">
+          <h3>Iced Himalayan Tea</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 80</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Iced-Spice-Latte.webp" alt="Iced Spiced Coffee">
+          <h3>Iced Spiced Coffee</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 60</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+      
+      <div id="Snacks">
+      <h2>Snacks</h2>
+      <div class="beverages">
+        <div class="beverage-contain">
+          <img src="image-section/momo1.jpg" alt="Momos">
+          <h3>Momos</h3>
+          <p>Steamed dumplings filled with seasoned vegetables, served with tomato chutney.</p>
+          <h3>Rs 180</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/samosa.jpeg" alt="Samosa">
+          <h3>Samosas (2 pcs)</h3>
+          <p>Crispy pastries filled with spiced potatoes and peas, served with mint chutney.</p>
+          <h3>Rs 60</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Aloo_Paratha.jpg" alt="Aloo_Paratha">
+          <h3>Aloo Paratha</h3>
+          <p>Flatbread stuffed with spiced potatoes, served with yogurt.</p>
+          <h3>Rs 120</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/potato chops.jpg" alt="Potato chops">
+          <h3>Aloo Chops (2 pcs)</h3>
+          <p>Flatbread stuffed with spiced potatoes,onion served with yogurt.</p>
+          <h3>Rs 60</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Sandwich_2023.jpg" alt="Sandwich">
+          <h3>Sandwich</h3>
+          <p>Grilled sandwich with spiced vegetables, cheese, and our special chutney.</p>
+          <h3>Rs 200</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/chana chat1.jpg" alt="chana chaat">
+          <h3>Chana Chaat</h3>
+          <p>Tangy and spicy chickpea salad with tomatoes, onions, and fresh herbs.</p>
+          <h3>Rs 150</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Burger.jpg" alt="Burger">
+          <h3>Burger</h3>
+          <p>Heavily lodaded with fresh vegetables, different ingridents and meats.</p>
+          <h3>Rs 180</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/puri-tarkari.jpg" alt="puri-tarkari">
+          <h3>Iced Himalayan Tea</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 140</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/Chowmin.webp" alt="Chowmin">
+          <h3>Iced Spiced Coffee</h3>
+          <p>Traditional spiced tea with cardamom, cinnamon, <br> ginger, and cloves.</p>
+          <h3>Rs 130</h3>
+        </div>
+      </div>
+      </div>
+
+
+      <div id="Desserts">
+      <h2>Desserts</h2>
+      <div class="beverages">
+        <div class="beverage-contain">
+          <img src="image-section/kheer.jpg" alt="Kheer">
+          <h3>Kheer</h3>
+          <p>Creamy rice pudding flavored with cardamom, saffron, and topped with nuts.</p>
+          <h3>Rs 90</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/gulab jamun.jpg" alt="Gulab Jamun (2 pcs)">
+          <h3>Gulab Jamun (2 pcs)</h3>
+          <p>Authentic Tibetan-style tea churned with <br> butter and salt.</p>
+          <h3>Rs 80</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/carrot haulwa.jpg" alt="Carrot Halwa">
+          <h3>Carrot Halwa</h3>
+          <p>Traditional sweet made from carrots, milk, and cardamom, garnished with nuts.</p>
+          <h3>Rs 110</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/cake.jpg" alt="Chocolate Cardamom Cake">
+          <h3>Chocolate Cardamom Cake</h3>
+          <p>Rich chocolate cake infused with cardamom, served with a dollop of cream</p>
+          <h3>Rs 70</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/jeeri.jpg" alt="Jeri (Nepali Funnel Cake)">
+          <h3>Jeri (Nepali Funnel Cake)</h3>
+          <p>Spiral-shaped sweet fried pastry, crispy on the outside and soft inside.</p>
+          <h3>Rs 60</h3>
+        </div>
+        <div class=" beverage-contain">
+          <img src="image-section/coconut laddu.jpg" alt="coconut Laddu (3 pcs)">
+          <h3>coconut Laddu (3 pcs)</h3>
+          <p>Sweet coconut balls flavored with cardamom and rose water.</p>
+          <h3>Rs 70</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+        <div class="content">
+            <section class="newsletter-section">
+                <h2 class="section-title">Newsletter</h2>
+                <p>Stay up to date with all the latest from Namesta Cafe</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Email *" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" required>
+                        <label for="subscribe">
+                            Yes, subscribe me to your newsletter <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Talk to Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">9848795482</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:namastacafe@gmail.com">namastacafe@gmail.com</a>
+                          </div>
+
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            500 kathmandu.<br>
+                            putalisadak, CA 94158
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="social-section">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon instagram">
+                               <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon facebook">
+                            <a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="social-icon twitter">
+                            <a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
+      
+
+      
+

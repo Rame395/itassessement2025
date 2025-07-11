@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste Cafe-About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="About_us.css">
+
+</head>
+<body>
+       
+        <nav>
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="1.index.html">Home</a></li>
+                <hr>
+                <li><a href="About_us.html" target="_blank">About US</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallary</a></li>
+                <li><a href="Menu.html" target="_blank">Menu</a></li>
+                <li><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li><a href="Contact_Us.html" target="_blank">Contact Us</a></li>
+                <li><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+
+                
+                <!-- <li><a href="#" class="icon"><i class="fa-solid fa-cart-shopping " ></i> Cart</a></li> -->
+                <!-- <li><a href=""><i class="fa-solid fa-cart-shopping">Cart</a></li> -->
+            </ul>
+
+            <ul>
+                <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="1.index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
+                <li class="hideOnMobile"> <a href="Gallery.html" target="_blank">Gallery </a></li>
+                <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
+                <li class="hideOnMobile"><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li class="hideOnMobile"><a href="Contact_Us.html" target="_blank">Contact US</a></li>
+                <li class="hideOnMobile"><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user fa-lg"></i> Sign up</a></li>
+                <!-- <li class="hideOnMobile"><a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-lg " ></i> Cart</a></li> -->
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+               const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='none'
+            }
+        </script>
+
+      <!-- <section> -->
+        <div class="aboutus-title">
+            <div class="title">
+                <h1>About Us</h1>
+                <p>We're big believers in the power of a good meal and a friendly place to eat it. Stop by for fresh, locally <br>  sourced food, served with a warm smile.</p>
+            </div>
+        </div>
+
+        <div class="aboutus-content1">
+            <div class="content1">
+                <div class="image">
+                    <img src="image-section/aboutus-image.jpg" alt="cafe-image">
+                </div>
+                <div class="inside-content">
+                    <h1>Our Beginnings</h1>
+                    <p>Our BeginningsNamaste Café began as a dream shared by Priya and Raj Sharma, who moved from Kathmandu
+                         to start a new life while bringing a piece of their homeland with them. After years of working in
+                          the hospitality industry, they decided to create a space that would showcase the rich cultural 
+                          heritage of Nepal through its cuisine and ambiance. <br> <br>In 2018, they transformed a small corner shop 
+                          into what is now known as Namaste Café - a haven for tea enthusiasts, coffee lovers, and anyone seeking 
+                          a moment of tranquility in their busy day.</p>
+                    <a href="Contact_Us.html"><button>Visit Us</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-content">
+                <p>Real Food. No Secret Ingredients.</p>
+            </div>
+        </div>
+
+        <div class="aboutus-content1 content2 ">
+            <div class="content1 content2">
+                <div class="inside-content">
+                    <h1>A table full of warmth, tradition, and stories. </h1>
+                    <p>  
+                        At Namaste Café, we honor Nepal’s rich tea culture through a colorful spread of spiced chiyas, herbal infusions, and handmade sweets. <br>
+                        Each cup is steeped in heritage and served with care — whether it’s a bold masala chai or a delicate herbal blend. <br><br>
+                        Surrounded by traditional utensils, seasonal treats, and a spirit of togetherness, <br>
+                        this table invites you to slow down, savor the moment, and feel right at home. <br>
+                        It’s more than just tea — it’s a taste of where we come from.</p>
+                     <a href="Menu.html"><button>View Menu</button></a>
+                    </div>
+                <div class="image image1">
+                    <img src="image-section/aboutus-image2.jpg" alt="cafe-image">
+                </div>
+            </div>
+        </div>
+      <!-- </section> -->
+       <footer>
+    <div class="footer">
+        <div class="container">
+        <div class="content">
+            <section class="newsletter-section">
+                <h2 class="section-title">Newsletter</h2>
+                <p>Stay up to date with all the latest from Namesta Cafe</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Email *" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" required>
+                        <label for="subscribe">
+                            Yes, subscribe me to your newsletter <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Talk to Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">9848795482</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:namastacafe@gmail.com">namastacafe@gmail.com</a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            500 kathmandu.<br>
+                            putalisadak, CA 94158
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="social-section">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon instagram">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon facebook">
+                           <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social-icon twitter">
+                            <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>

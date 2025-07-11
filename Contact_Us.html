@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namasta Cafe-Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Contact_us.css">
+    <script src="Contact_Us.js" defer></script>
+
+
+</head>
+<body>
+
+
+        <nav>
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="1.index.html" target="_blank">Home</a></li>
+                <hr>
+                <li><a href="About_us.html" target="_blank">About US</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallary</a></li>
+                <li><a href="Menu.html" target="_blank">Menu</a></li>
+                <li><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li><a href="Contact_Us.html" target="_blank">Contact Us</a></li>
+                <li><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+
+                
+                
+            </ul>
+
+            <ul>
+                <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="1.index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
+                <li class="hideOnMobile"> <a href="Gallary.html" target="_blank">Gallery </a></li>
+                <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
+                <li class="hideOnMobile"><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li class="hideOnMobile"><a href="Contact_Us.html" target="_blank">Contact US</a></li>
+                <li class="hideOnMobile"><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user fa-lg"></i> Sign up</a></li>
+                <!-- <li class="hideOnMobile"><a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-lg " ></i> Cart</a></li> -->
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+               const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='none'
+            }
+        </script>
+   
+<section class="contact-section">
+  <div class="contact-title">
+    <h2>Contact Us</h2>
+    <p class="subtitle">Have questions or want to share your experience? We'd love to hear from you.</p>
+  </div>
+
+  <div class="contact">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="f4e25a91-352a-4fc0-9d9d-1acff6168051">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" class="contact_input" />
+          <small class="error-message" id="nameError"></small>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" class="contact_input" />
+          <small class="error-message" id="emailError"></small>
+
+          <label for="phone">Phone No</label>
+          <input type="text" id="phone" name="phone no" placeholder="Your Phone No" class="contact_input" />
+          <small class="error-message" id="phoneError"></small>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" class="contact_input"></textarea>
+          <small class="error-message" id="messageError"></small>
+
+          <button type="submit" id="submitBtn">Send Message</button>
+
+          <p class="success-message" id="successMessage"> Message sent successfully!</p>
+        </form>
+
+      </div>
+
+      
+      <div class="contact-info">
+        <h3>Visit Us</h3>
+        <p><span>📍</span>500 kathmandu Putalisadak, PS 10001</p>
+        <p><span>📞</span>9848795482</p>
+        <p><span>📧</span><a href="mailto:rameshshahi714@gmail.com">hello@namastecafe.com</a></p>
+
+        <h3>Opening Hours</h3>
+        <div class="hours">
+          <div>Monday - Friday</div><div>7:00 AM -8:00 PM</div>
+          <div>Saturday</div><div>8:00 AM - 9:00 PM</div>
+          <div>Sunday</div><div>8:00 AM - 6:00 PM</div>
+        </div>
+
+        <img src="image-section/map.png" alt="Map" class="map" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <footer>
+    <div class="footer">
+        <div class="container">
+        <div class="content">
+            <section class="newsletter-section">
+                <h2 class="section-title">Newsletter</h2>
+                <p>Stay up to date with all the latest from Namesta Cafe</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Email *" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" required>
+                        <label for="subscribe">
+                            Yes, subscribe me to your newsletter <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Talk to Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">9848795482</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:namastacafe@gmail.com">namastacafe@gmail.com</a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            500 kathmandu.<br>
+                            putalisadak, CA 94158
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="social-section">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon instagram">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon facebook">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social-icon twitter">
+                            <a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste Cafe-Order Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="order_online.css">
+    <script src="order_online.js"></script>
+    
+</head>
+<body>
+    <nav>
+       <ul class="side-bar">
+           <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+           <li><a href="1.index.html" target="_blank">Home</a></li>
+           <hr>
+           <li><a href="4.About_us.html" target="_blank">About US</a></li>
+           <li><a href="Menu.html" target="_blank">Menu</a></li>
+           <li><a href="5.order_online.html" target="_blank">Order Online</a></li>
+           <li><a href="3.Contact_Us.html" target="_blank">Contact US</a></li>
+                
+           <li><a href="2.signup.html" target="_blank" class="icon"><i class="fa-solid fa-user"></i> Log In</a></li>
+           <li><a href="#" class="icon"><i class="fa-solid fa-cart-shopping " ></i> Cart</a></li>
+            <!-- <div class="cart-icon" id="cart-icon" >
+           <li><a href="#" class="icon " id="open-cart" ><i class="fa-solid fa-cart-shopping fa-lg " ></i> </a></li>
+           <span id="cart-count" class="cart-count">0</span> -->
+        </div>
+           
+       </ul>
+
+       <ul>
+           <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
+           <li class="hideOnMobile"><a href="1.index.html" target="_blank">Home</a></li>
+           <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
+           <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
+           <li class="hideOnMobile"><a href="order_online.html" target="_blank">Order Online</a></li>
+           <li class="hideOnMobile"><a href="Contact_Us.html" target="_blank">Contact US</a></li>
+           <li class="hideOnMobile"><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user fa-lg"></i>Sign Up</a></li>
+           <div class="cart-icon hideOnMobile" id="cart-icon" >
+           <li><a href="#" class="icon " id="open-cart" ><i class="fa-solid fa-cart-shopping fa-lg " ></i> </a></li>
+           <span id="cart-count" class="cart-count">0</span>
+        </div>
+           
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+    </ul>
+ </nav>
+
+
+    <div class="content">
+        <div class="header-image">
+            <img src="image-section/order-online.avif" alt="header-image" class="desktop-image">
+            <img src="image-section/order-online-header.avif" alt="Mobile Image" class="mobile-img">
+        </div>
+    </div>
+     
+    <div class="container">
+        <div class="information">
+            <h1>ORDER ONLINE</h1>
+            <P class="order_description">You can order online! Browse our menu items and choose what you'd like to order from us.</P>
+            <span class="online-sign"><p class="sign"></p>Accepting Orders</span>
+            
+
+            <button onclick="openOrderModal()" class="order-btn">Order Now</button>
+     
+          
+            <div id="order-modal" class="modal hidden">
+              <div class="modal-content">
+                <span class="close" onclick="closeOrderModal()">&times;</span>
+                <h2>How would you like to receive your order?</h2>
+            
+                <div class="toggle-buttons">
+                  <button id="pickupBtn" onclick="selectOption('Pickup')">Pickup</button>
+                  <button id="deliveryBtn" onclick="selectOption('Delivery')">Delivery</button>
+                </div>
+                
+            <div id="pickup-info" class="mt-4">
+            <p><strong>Pickup from:</strong></p>
+             <p id="pickup-address">Putalisadak, Kathmandu</p>
+              </div>
+
+            
+                <div id="delivery-address" class="address-section hidden">
+                  <label for="addressInput">Deliver to:</label>
+                  <input type="text" id="addressInput" placeholder="Enter your delivery address" />
+                </div>
+            
+                <button class="save-btn" onclick="saveOrderChoice()">Save</button>
+                
+                
+              </div>
+            </div>
+        </div>
+       
+    </div>
+
+
+
+
+
+         
+             
+        
+
+    <div class="nav-tab">
+        <div class="tab-container">
+            <a href="#beverages" class="tab">Beverages</a>
+            <a href="#Snacks" class="tab">Snacks</a>
+            <a href="#Desserts" class="tab">Desserts</a>
+            <a href="#Cakes" class="tab">Cakes</a>
+            <a href="#Ice-Cream" class="tab">Ice-Cream</a>
+        </div>
+ </div>
+      
+ 
+ 
+ 
+ <div class="section-content">
+    
+   <div class="Ads-image">
+    <img src="image-section/beverages ads.png" alt="Ads">
+   </div>
+    <div class="food container" id="beverages">
+        
+        <div class="food-card">
+            <img src="image-section/Cappuccino-exc.webp" alt="Cappiccino" class="food-image" >
+            <div class="food-info">
+                <div class="food-name">Cappiccino</div>
+                <div class="price-data">
+                    <div class="food-price">Rs300</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Butter tea.jpg" alt="Butter tea" class="food-image">
+            <div class="food-info">
+                <div class="food-name"> Butter Tea</div>
+                <div class="price-data">
+                    <div class="food-price">Rs200</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Cardamom-latte-square.jpg" alt="Latte" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Cardamom Latte</div>
+                <div class="price-data">
+                    <div class="food-price">Rs250</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/cinnamon-ginger-tea.jpg" alt="honey tea" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Ginger Honey Tea</div>
+                <div class="price-data">
+                    <div class="food-price">Rs100</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Specialty Pour-Over Coffee.jpg" alt="coffee" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Coffee</div>
+                <div class="price-data">
+                    <div class="food-price">Rs80</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/iced-green-tea-with-mint.jpg" alt="choclate-drink" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Ice Tea</div>
+                <div class="price-data">
+                    <div class="food-price">Rs100</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/MangoLassi.jpg" alt="mango-lassi" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Mango Lassi</div>
+                <div class="price-data">
+                    <div class="food-price">Rs120</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Indulgent-Hot-Chocolate.jpg" alt="Hot choclate" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Hot Choclate</div>
+                <div class="price-data">
+                    <div class="food-price">Rs150</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Iced-Spice-Latte.webp" alt="" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Iced Coffee</div>
+                <div class="price-data">
+                    <div class="food-price">Rs160</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+    
+    <div class="section-content">
+    <div class="food container" id="Snacks">
+        
+        <div class="food-card">
+            <img src="image-section/momo1.jpg" alt="Momo" class="food-image" height="90px">
+            <div class="food-info">
+                <div class="food-name">Momos</div>
+                <div class="price-data">
+                    <div class="food-price">Rs180</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/samosa.jpeg" alt="samosa" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Samosas (2 pcs)</div>
+                <div class="price-data">
+                    <div class="food-price">Rs60</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Aloo_Paratha.jpg" alt="Aloo Paratha" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Aloo Paratha</div>
+                <div class="price-data">
+                    <div class="food-price">Rs90</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/potato chops.jpg" alt="Chops" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Aloo chops</div>
+                <div class="price-data">
+                    <div class="food-price">Rs60</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Sandwich_2023.jpg" alt="sandwich" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Sandwich</div>
+                <div class="price-data">
+                    <div class="food-price">Rs165</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/chana chat1.jpg" alt="chaat" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Chana Chaat</div>
+                <div class="price-data">
+                    <div class="food-price">Rs40</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Burger.jpg" alt="Burger" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Burger</div>
+                <div class="price-data">
+                    <div class="food-price">Rs180</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/puri-tarkari.jpg" alt="puri-tarkari" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Puri Tarkari</div>
+                <div class="price-data">
+                    <div class="food-price">Rs120</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Chowmin.webp" alt="Chowmin" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Chowmin</div>
+                <div class="price-data">
+                    <div class="food-price">Rs140</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Chicken-Biryani-Recipe.jpg" alt="Biryani" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Biryani</div>
+                <div class="price-data">
+                    <div class="food-price">Rs300</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/pizza.jpg" alt="pizza" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Pizza</div>
+                <div class="price-data">
+                    <div class="food-price">Rs600</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/nachos.jpg" alt="nachos" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Nachos</div>
+                <div class="price-data">
+                    <div class="food-price">Rs90</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="Ads-image">
+    <img src="image-section/ads2.png" alt="Ads">
+   </div>
+
+ 
+</video>
+    </div>
+
+
+
+    <div class="section-content">
+    <div class="Ads-image">
+    <img src="image-section/Ads.png" alt="Ads">
+   </div>
+    <div class="food container" id="Desserts">
+        
+        <div class="food-card">
+            <img src="image-section/kheer.jpg" alt="Kheer" class="food-image" >
+            <div class="food-info">
+                <div class="food-name">Kheer</div>
+                <div class="price-data">
+                    <div class="food-price">Rs60</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/gulab jamun.jpg" alt="gulab" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Gulab Jamun (2 pcs)</div>
+                <div class="price-data">
+                    <div class="food-price">Rs60</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/carrot haulwa.jpg" alt="carrot" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Carrot Halwa</div>
+                <div class="price-data">
+                    <div class="food-price">Rs70</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/cake.jpg" alt="Choclate cake" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Choclate Cake</div>
+                <div class="price-data">
+                    <div class="food-price">Rs90</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/jeeri.jpg" alt="jeeri" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Jeri (Nepali Funnel Cake)</div>
+                <div class="price-data">
+                    <div class="food-price">Rs40</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/coconut laddu.jpg" alt="coconut" class="food-image">
+            <div class="food-info">
+                <div class="food-name">coconut Laddu (3 pcs)</div>
+                <div class="price-data">
+                    <div class="food-price">Rs50</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+
+        
+
+
+<div class="section-content">
+    <div class="food container" id="Cakes">
+        
+        <div class="food-card">
+            <img src="image-section/choclate cake.webp" alt="cake" class="food-image" >
+            <div class="food-info">
+                <div class="food-name">Choclate cake</div>
+                <div class="price-data">
+                    <div class="food-price">Rs180</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/pound cake.jpg " alt="cake" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Pound Cake</div>
+                <div class="price-data">
+                    <div class="food-price">Rs400</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/raninbow cake.jpg" alt="cake" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Rainbow Cake</div>
+                <div class="price-data">
+                    <div class="food-price">Rs450</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/black-forest-cake.webp" alt="Black forest" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Black Forest Cake</div>
+                <div class="price-data">
+                    <div class="food-price">Rs800</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/vanilla-cake.webp" alt="vanilla" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Vanilla Cake</div>
+                <div class="price-data">
+                    <div class="food-price">Rs750</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Cheesecake.jpg" alt="Cheese" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Cheese Cake</div>
+                <div class="price-data">
+                    <div class="food-price">Rs600</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Ads-image">
+    <img src="image-section/ads3.png" alt="Ads">
+   </div>
+</div>
+
+
+<div class="section-content">
+    <div class="Ads-image">
+    <img src="image-section/ads4.png" alt="Ads">
+   </div>
+    <div class="food container" id="Ice-Cream">
+        
+        <div class="food-card">
+            <img src="image-section/strawberry icecream.webp" alt="strawberry" class="food-image" >
+            <div class="food-info">
+                <div class="food-name">Strawberry</div>
+                <div class="price-data">
+                    <div class="food-price">Rs150</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Blackberry-Vanilla-Ice-Cream.webp " alt="vanilla" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Blackberry Vanilla</div>
+                <div class="price-data">
+                    <div class="food-price">Rs160</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/kulfi-ice-cream.jpg" alt="kulif" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Kulfi</div>
+                <div class="price-data">
+                    <div class="food-price">Rs80</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Mango-icecream.jpg" alt="Mango" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Mango</div>
+                <div class="price-data">
+                    <div class="food-price">Rs110</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Choco-Bar-Ice-Cream.webp" alt="choco bar" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Choco-Bar</div>
+                <div class="price-data">
+                    <div class="food-price">Rs75</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="image-section/Ice-cream-sundae.jpg" alt="Sundae" class="food-image">
+            <div class="food-info">
+                <div class="food-name">Sundae</div>
+                <div class="price-data">
+                    <div class="food-price">Rs80</div>
+                </div>
+                <div class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</div>
+
+        
+   
+
+ 
+    
+    <div id="cart-overlay" class="cart-overlay"></div>
+    <div class="cart-model" id="cart-model">
+        <div class="cart-head">
+            <h2>Your Cart</h2>
+            <button class="close-button" id="close-cart">X</button>
+        </div>
+        <ul class="cart-items" id="cart-items">
+
+        </ul>
+            <div class="cart-total">Total: $<span id="total-price">0</span></div>
+            <div class="checkout-button">checkbox</div>
+    </div>
+    
+     <footer>
+    <div class="footer">
+        <div class="footer-container">
+        <div class="footer-content">
+            <section class="newsletter-section">
+                <h2 class="section-title">Newsletter</h2>
+                <p>Stay up to date with all the latest from Namesta Cafe</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Email *" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" required>
+                        <label for="subscribe">
+                            Yes, subscribe me to your newsletter <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Talk to Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">9848795482</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                           <a href="mailto:namastacafe@gmail.com">namastacafe@gmail.com</a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            500 kathmandu.<br>
+                            putalisadak, CA 94158
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="social-section">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon instagram">
+                             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon facebook">
+                          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+   
+            
+
+    

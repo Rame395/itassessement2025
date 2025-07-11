@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste Cafe-index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="1.style.css">
+</head>
+<body>
+   
+        <nav>
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="1.index.html">Home</a></li>
+                <hr>
+                <li><a href="About_us.html" target="_blank">About US</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallary</a></li>
+                <li><a href="Menu.html" target="_blank">Menu</a></li>
+                <li><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li><a href="Contact_Us.html" target="-blank">Contact Us</a></li>
+                <li><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+
+                
+                <!-- <li><a href="#" class="icon"><i class="fa-solid fa-cart-shopping " ></i> Cart</a></li> -->
+                <!-- <li><a href=""><i class="fa-solid fa-cart-shopping">Cart</a></li> -->
+            </ul>
+
+            <ul>
+                <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="1.index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
+                <li class="hideOnMobile"> <a href="Gallery.html" target="_blank">Gallery </a></li>
+                <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
+                <li class="hideOnMobile"><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li class="hideOnMobile"><a href="Contact_Us.html" target="_blank">Contact US</a></li>
+                <li class="hideOnMobile"><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user fa-lg"></i> Sign up</a></li>
+                <!-- <li class="hideOnMobile"><a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-lg " ></i> Cart</a></li> -->
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+               const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='none'
+            }
+        </script>
+
+        
+
+<section>
+
+
+    
+    <div class="hero-section">
+    <div class="hero-container">
+        <div class="hero-slider">
+
+            <div class="item">
+                <img src="image-section/hero-image.avif" alt="hero-image" class="hero-image">
+                
+                
+                <div class="hero-content">
+                    <div class="type">Cafe & Restaurant Est. 2035</div>
+                    <div class="title">Your Go-to Spot for <br>Delicious Eats & Coffee</div>
+                    <div class="description">
+                      Freshly brewed coffee, mouth-watering dishes,<br>and a cozy atmosphere — all in one place.
+                    </div>
+                    <!-- <div class="hero-button">
+                        <button>SEE MORE</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image_design">
+                <img src="image-section/sliderbakery.jpg" alt="hero-image" class="hero-image">
+                </div>
+
+                <div class="hero-content">
+                    <div class="title">Variety of Freshly Baked Breads</div>
+                    <div class="type">Baked Fresh. Every Morning.</div>
+                    <div class="description">
+                       Our artisan breads and golden pastries are handmade daily — crispy, fluffy, and full of flavor.
+                    </div>
+                    <!-- <div class="hero-button">
+                        <button>SEE MORE</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image-section/hero_image3.jpg" alt="hero-image" class="hero-image">
+
+                <div class="hero-content">
+                    <div class="title">Cozy Cafe Interior with Chalkboard Menu</div>
+                    <div class="type">Warm Spaces, Even Warmer Moments</div>
+                    <div class="description">
+                        Step inside and find your favorite corner — whether it's for journaling, laughing with friends, or simply sipping peace.
+                    </div>
+                    <!-- <div class="hero-button">
+                        <button>SEE MORE</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image-section/hero_image4.jpg" alt="hero-image" class="hero-image">
+
+                <div class="hero-content">
+                    <div class="title">Coffee with Beans & <br> Croissant</div>
+                    <div class="type">Mornings That Begin with Aroma & Flavor</div>
+                    <div class="description">
+                       Start your day the café way — rich coffee, buttery pastries, and slow sips of satisfaction.
+                    </div>
+                    <!-- <div class="hero-button">
+                        <button>SEE MORE</button>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+            <div class="item">
+                <img src="image-section/hero-image.avif" alt="hero-image">
+            </div>
+            <div class="item">
+                <img src="image-section/sliderbakery.jpg" alt="hero-image">
+            </div>
+            <div class="item">
+                <img src="image-section/hero_image3.jpg" alt="hero-image">
+            </div>
+            <div class="item">
+                <img src="image-section/hero_image4.jpg" alt="hero-image">
+            </div>
+
+        </div>
+
+
+        <div class="nextPrevArrows">
+            <button class="prev">&#10094;</button>
+            <button class="next"> &#10095; </button>
+        </div>
+
+
+    </div>
+    </div>
+
+    <script>
+        let nextBtn = document.querySelector('.next')
+let prevBtn = document.querySelector('.prev')
+
+let slider = document.querySelector('.hero-container')
+let sliderList = slider.querySelector('.hero-container .hero-slider')
+let thumbnail = document.querySelector('.hero-container .thumbnail')
+let thumbnailItems = thumbnail.querySelectorAll('.item')
+
+thumbnail.appendChild(thumbnailItems[0])
+
+
+nextBtn.onclick = function() {
+    moveSlider('next')
+}
+
+
+
+prevBtn.onclick = function() {
+    moveSlider('prev')
+}
+
+
+function moveSlider(direction) {
+    let sliderItems = sliderList.querySelectorAll('.item')
+    let thumbnailItems = document.querySelectorAll('.thumbnail .item')
+    
+    if(direction === 'next'){
+        sliderList.appendChild(sliderItems[0])
+        thumbnail.appendChild(thumbnailItems[0])
+        slider.classList.add('next')
+    } else {
+        sliderList.prepend(sliderItems[sliderItems.length - 1])
+        thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
+        slider.classList.add('prev')
+    }
+
+
+    slider.addEventListener('animationend', function() {
+        if(direction === 'next'){
+            slider.classList.remove('next')
+        } else {
+            slider.classList.remove('prev')
+        }
+    }, {once: true}) 
+}
+
+setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+},5000);
+    </script>
+
+
+
+     
+    <div class="slider">
+     <div class="text-slider">
+  <button class="text-slider-btn prev">&#10094;</button>
+  <div class="text-slider-track">
+    <div class="text-slide"> Watch Club World Cup at NAMESTE CAFE (40% discount on food and beverages)</div>
+    <div class="text-slide">Daily Deal    |   Coffee & Pastry Rs250</div>
+    <div class="text-slide">Weekend Brunch  Saturday 9am - 2pm</div>
+  </div>
+  <button class="text-slider-btn next">&#10095;</button>
+</div>
+</div>
+
+
+<script>
+  const track = document.querySelector('.text-slider-track');
+  const slides = document.querySelectorAll('.text-slide');
+  const total = slides.length;
+  let index = 0;
+
+  document.querySelector('.text-slider-btn.next').onclick = () => {
+    index = (index + 1) % total;
+    track.style.transform = `translateX(-${index * 100}vw)`;
+  };
+
+  document.querySelector('.text-slider-btn.prev').onclick = () => {
+    index = (index - 1 + total) % total;
+    track.style.transform = `translateX(-${index * 100}vw)`;
+  };
+</script>
+
+<div class="services">
+    <div class="services-content">
+        <div class="services-detail">
+            <h1>EAT.</h1>
+            <p class="pag1">Breakfast, Lunch and Artisanal Pastries</p>
+            <p class="pag2">Enjoy crafted meals made with passion and purpose. <br>
+                           From fresh mornings to flavorful afternoons, <br>
+                        we serve food that feels like home.</p>
+             <a href="Menu.html" class="button"><button>See More</button></a>
+        </div>
+    </div>
+
+    <div class="services-image">
+        <div class="image1"></div>
+    </div>
+</div>
+<div class="services services2">
+    <div class="services-image2">
+        <div class="image2"></div>
+    </div>
+    <div class="services-content">
+        <div class="services-detail">
+            <h1>Drink.</h1>
+            <p class="pag1">The Freshest Cup in Town </p>
+            <p class="pag2">From bold brews to calming teas, <br>
+                            every cup is made fresh, just for you. <br>
+                            Sip, relax, and taste the difference.</p>
+            <a href="Menu.html" class="button"><button>See More</button></a>
+        </div>
+    </div>
+
+</div>
+
+<div class="services">
+    <div class="services-content">
+        <div class="services-detail">
+            <h1>Enjoy.</h1>
+            <p class="pag1">Make Yourself at Home</p>
+            <p class="pag2">Cozy corners, friendly faces, and calm vibes — <br>
+                           everything here is designed for comfort. <br>
+                           Sit back, unwind, and stay a while..</p>
+             <a href="" class="button"><button>See More</button></a>
+        </div>
+    </div>
+
+    <div class="services-image">
+        <div class="image3"></div>
+    </div>
+</div>
+
+<div class="information">
+ <div class="information-content">
+    <h1>Drop By for a Bite. </h1><br>
+    <div class="address-and-time">
+    <div class="address">
+        <h2>Address</h2>
+        <p>500 kathmandu. <br> <br>putalisadak, CA 94158</p>
+    </div>
+    <hr>
+    <div class="address">
+        <h2>Opening Hours</h2>
+        <p>Mon - Fri: 9am - 6pm <br><br>Saturday: 10am - 2pm <br><br> Sunday: Closed</p>
+    </div>
+ </div>
+ </div>
+ </div>
+<div class="image-container">
+ <div class="info-image">
+    <div class="info-element">
+        <img src="image-section/section-image1.webp" alt="cafe-img">
+        <img src="image-section/section-image4.jpeg" alt="cafe-img">
+        <img src="image-section/section-image3.jpg" alt="cafe-img">
+        <img src="image-section/section-image5.webp" alt="cafe-img">
+        <img src="image-section/section-image2.webp" alt="cafe-img">
+    </div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+        <div class="content">
+            <section class="newsletter-section">
+                <h2 class="section-title">Newsletter</h2>
+                <p>Stay up to date with all the latest from Namesta Cafe</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Email *" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" required>
+                        <label for="subscribe">
+                            Yes, subscribe me to your newsletter <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Talk to Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">9848795482</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:namastacafe@gmail.com">namastacafe@gmail.com</a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            500 kathmandu.<br>
+                            putalisadak, CA 94158
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="social-section">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon instagram">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon facebook">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social-icon twitter">
+                            <a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="signup.js"></script>
+    <title>Namaste Cafe-sign up</title>
+</head>
+<body>
+
+
+        <nav>
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="1.index.html" target="_blank">Home</a></li>
+                <hr>
+                <li><a href="About_us.html" target="_blank">About US</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallary</a></li>
+                <li><a href="Menu.html" target="_blank">Menu</a></li>
+                <li><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li><a href="Contact_Us.html" target="_blank">Contact Us</a></li>
+                <li><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+
+                
+                <!-- <li><a href="#" class="icon"><i class="fa-solid fa-cart-shopping " ></i> Cart</a></li> -->
+                <!-- <li><a href=""><i class="fa-solid fa-cart-shopping">Cart</a></li> -->
+            </ul>
+
+            <ul>
+                <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="1.index.html" target="_blank">Home</a></li>
+                <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
+                <li class="hideOnMobile"> <a href="Gallery.html" target="_blank">Gallery </a></li>
+                <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
+                <li class="hideOnMobile"><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li class="hideOnMobile"><a href="Contact_Us.html" target="_blank">Contact US</a></li>
+                <li class="hideOnMobile"><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user fa-lg"></i> Sign up</a></li>
+                <!-- <li class="hideOnMobile"><a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-lg " ></i> Cart</a></li> -->
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+               const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='none'
+            }
+        </script>
+
+
+
+
+<div class="outer-container">
+<div class="container">
+    <div class="form-box login">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username"
+                required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password"
+                required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="forget-link">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p class="login-prag">or login with social platform</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-google"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </form>
+    </div>
+    <div class="form-box register">
+        <form action="">
+            <h1>Registeration</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username"
+                required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email"
+                required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password"
+                required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="forget-link">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn1">Register</button>
+            <p class="login-prag">or register with social platform</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-google"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+            <h1>Hello, Welcome</h1>
+            <p>Don't have an account</p>
+            <button class="btn1 register-btn">Register</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+            <h1>Welcome back</h1>
+            <p>Already have an account</p>
+            <button class="btn1 Login-btn">Login</button>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</div>
+</div>
+
+
+  <footer>
+    <div class="footer">
+        <div class="footer-container">
+        <div class="footer-content">
+            <section class="newsletter-section">
+                <h2 class="section-title">Newsletter</h2>
+                <p>Stay up to date with all the latest from Namesta Cafe</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Email *" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" required>
+                        <label for="subscribe">
+                            Yes, subscribe me to your newsletter <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Talk to Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">9848795482</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:info@mysite.com">namastacafe@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            500 kathmandu.<br>
+                            putalisadak, CA 94158
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="social-section">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons1">
+                        <div class="social-icon instagram">
+                           <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon facebook">
+                           <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social-icon twitter">
+                            <a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
+

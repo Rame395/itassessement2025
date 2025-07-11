@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaste-Café Gallery</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <link rel="stylesheet" href="Gallery.css">
+
+</head>
+<body>
+
+          <nav>
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="1.index.html">Home</a></li>
+                <hr>
+                <li><a href="About_us.html" target="_blank">About US</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallary</a></li>
+                <li><a href="Menu.html" target="_blank">Menu</a></li>
+                <li><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li><a href="Contact_Us.html" target="_blank">Contact Us</a></li>
+                <li><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+
+                
+                <!-- <li><a href="#" class="icon"><i class="fa-solid fa-cart-shopping " ></i> Cart</a></li> -->
+                <!-- <li><a href=""><i class="fa-solid fa-cart-shopping">Cart</a></li> -->
+            </ul>
+
+            <ul>
+                <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="1.index.html" target="_blank">Home</a></li>
+                <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
+                <li class="hideOnMobile"> <a href="Gallary.html" target="_blank">Gallery </a></li>
+                <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
+                <li class="hideOnMobile"><a href="order_online.html" target="_blank">Order Online</a></li>
+                <li class="hideOnMobile"><a href="Contact_Us.html" target="_blank">Contact US</a></li>
+                <li class="hideOnMobile"><a href="signup.html" target="_blank" class="icon"><i class="fa-solid fa-user fa-lg"></i> Sign up</a></li>
+                <!-- <li class="hideOnMobile"><a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-lg " ></i> Cart</a></li> -->
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+               const sidebar=document.querySelector('.side-bar')
+               sidebar.style.display='none'
+            }
+        </script>
+ <div class="title">
+  <h1>Our Café Moments</h1>
+  <p class="description">Step inside and explore the heart of our café — from cozy corners to culinary creations.</p>
+ </div>
+
+  <section class="gallery">
+
+    <div class="gallery-item">
+      <a href="image-section/gallery_image1.jpg" data-lightbox="cafe" data-title="Warm and cozy interior with rustic charm">
+        <img src="image-section/gallery_image1.jpg" alt="Cafe interior"/>
+      </a>
+      <div class="caption">Interior Ambience</div>
+    </div>
+
+    <div class="gallery-item">
+      <a href="image-section/gallery_image2.jpg" data-lightbox="cafe" data-title="Inviting exterior with outdoor seating">
+        <img src="image-section/gallery_image2.jpg" alt="Cafe exterior"/>
+      </a>
+      <div class="caption">Charming Entrance</div>
+    </div>
+
+    <div class="gallery-item">
+      <a href="image-section/gallery_image3.jpg" data-lightbox="cafe" data-title="Signature coffee with latte art">
+        <img src="image-section/gallery_image3.jpg" alt="Coffee with latte art"/>
+      </a>
+      <div class="caption">Latte Art Perfection</div>
+    </div>
+
+    <div class="gallery-item">
+      <a href="image-section/gallery_image4.jpg" data-lightbox="cafe" data-title="Freshly baked croissants and pastries">
+        <img src="image-section/gallery_image4.jpg" alt="Fresh pastries"/>
+      </a>
+      <div class="caption">Fresh Pastries</div>
+    </div>
+
+    <div class="gallery-item">
+      <a href="image-section/Gallery_image5.jpg" data-lightbox="cafe" data-title="Live music night at the café">
+        <img src="image-section/Gallery_image5.jpg" alt="Cafe event"/>
+      </a>
+      <div class="caption">Live Events</div>
+    </div>
+
+    <div class="gallery-item">
+      <a href="image-section/gallery_image6.avif" data-lightbox="cafe" data-title="Our skilled baristas at work">
+        <img src="image-section/gallery_image6.avif" alt="Barista making coffee"/>
+      </a>
+      <div class="caption">Meet the Baristas</div>
+    </div>
+
+    <div class="gallery-item">
+      <a href="image-section/gallery_image7.jpg" data-lightbox="cafe" data-title="	“Try our café's bestselling brunch platter.”">
+        <img src="image-section/gallery_image7.jpg" alt="Cafe signature dish" />
+      </a>
+      <div class="caption">Cafe signature dish</div>
+    </div>
+
+    <div class="gallery-item">
+      <a href="image-section/gallery_image8.jpeg" data-lightbox="cafe" data-title="“Enjoy the sun and coffee in our relaxing patio area.”">
+        <img src="image-section/gallery_image8.jpeg" alt="cafe outdoor space" />
+      </a>
+      <div class="caption">"cafe outdoor space</div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer">
+        <div class="container">
+        <div class="content">
+            <section class="newsletter-section">
+                <h2 class="section-title">Newsletter</h2>
+                <p>Stay up to date with all the latest from Namesta Cafe</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Email *" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" required>
+                        <label for="subscribe">
+                            Yes, subscribe me to your newsletter <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Join</button>
+                </form>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Talk to Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">9848795482</div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:namastacafe@gmail.com">namastacafe@gmail.com</a>
+                          </div>
+                        </div>
+
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            500 kathmandu.<br>
+                            putalisadak, CA 94158
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="social-section">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon instagram">
+                             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon facebook">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+</footer>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script> -->
+</body>
+</html>
+
+
+
