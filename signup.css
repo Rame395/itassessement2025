@@ -12,6 +12,10 @@ body {
     background-color: #f7f1e4;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 nav {
     width: 100%;
