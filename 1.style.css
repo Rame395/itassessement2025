@@ -467,7 +467,7 @@ nav li:first-child{
 .text-slider-track {
   display: flex;
   transition: transform 1s ease;
-  width: 150%; /* Adjust based on number of slides */
+  width: 150%; 
 }
 
 .text-slide {
@@ -737,7 +737,7 @@ nav li:first-child{
    height: 30px;
    width: 50px;
    float:right ;
-   /* margin-bottom: 50px; */
+  
 }
 
 
