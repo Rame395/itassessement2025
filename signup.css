@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #f7f1e4;
+     background: linear-gradient(90deg, #f7f1e4, #e1d6bd);
 }
 
 html{
@@ -112,23 +112,34 @@ nav a:hover {
     gap: 5px;
 }
 
-
-
+.body-logo{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+  
+}
     
+.body-logo img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 600px;
+    top:150px;
+}
     
-
 .outer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(90deg, #f7f1e4, #e1d6bd);
-    margin-bottom: 45px;
+    margin-bottom: 150px;
+   
 }
 
 .container {
     position: relative;
-    top: 100px;
+    top: 210px;
     width: 800px;
     height: 550px;
     background: #fff;
@@ -389,8 +400,8 @@ form {
 
 
  .footer{
+     
     background: linear-gradient(135deg, #f7f1e4 0%, #f7f1e4 100%);
-   
     display: flex;
     justify-content: center;
     align-items: center;
