@@ -711,7 +711,7 @@ nav li:first-child{
    height: 365px;
    display: flex;
    justify-content: center;
-   margin-bottom: 30px;
+   /* margin-bottom: 30px; */
 }
 
 .info-image{
@@ -728,19 +728,33 @@ nav li:first-child{
   
 .info-element img {
   width: 270.5px;
-  height: 350px;
+  height: 365px;
   max-width: 300px;
   object-fit: cover;
 
 }
-.gallary_button{
-   height: 30px;
-   width: 50px;
-   float:right ;
-  
+
+.Gallery{
+    margin:1px 0 25px 1285px ;
 }
 
+.Gallery button{
+    width: 7rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    box-shadow: -10px 0 10px #2d2c2c ;
+    border: 1px solid rgb(78, 78, 78);
+}
 
+.Gallery button:hover{
+    background-color: #523426;
+    color: white;
+    box-shadow: -10px 0 10px #523426 ;
+    transition-duration: 0.7s;
+
+}
+   
 
  @media (min-width: 768px) and (max-width: 1023px) {
   .info-element img {
