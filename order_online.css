@@ -925,6 +925,10 @@ nav li:first-child{
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
+.social-icon i{
+    color:white;
+}
         
 .social-icon.facebook {
     background: #3b5998;

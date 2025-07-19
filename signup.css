@@ -246,19 +246,43 @@ form {
     cursor: pointer;
 }
 
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .social-icons a {
     display: inline-flex;
     width: 35px;
     padding: 7px;
-    border: 2px solid #070707;
+    border: 2px solid none;
     border-radius: 8px;
-    font-size: 15px;
-    color: #523426;
+    font-size: 18px;
+    /* color: #523426; */
     text-decoration: none;
     margin: 0 8px;
     justify-content: center;
     align-items: center;
 }
+
+.social-icons.Google a{
+  background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853, #EA4335);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size:25px ;
+
+}
+  
+
+.social-icons.facebook a{
+    background: #3b5998;
+    color:white;
+}
+
+
 
 .container .login-prag{
     color: #523426;
@@ -592,6 +616,10 @@ form {
     font-size: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.social-icon1 i{
+    color:white;
 }
         
 .social-icon1.facebook {

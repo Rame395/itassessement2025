@@ -21,10 +21,10 @@ nav{
     width: 100%;
     box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
     background-color: #f7f1e4;
+   
     position: fixed;
     top:0px;
     z-index: 999;
-   
     
     
 }
@@ -973,6 +973,10 @@ nav li:first-child{
         
 .social-icon.facebook {
     background: #3b5998;
+}
+
+.social-icon i{
+    color:white;
 }
         
 .social-icon.twitter {
