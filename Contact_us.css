@@ -263,7 +263,7 @@ nav li:first-child{
 }
 
  .contact_input:focus {
- border-color: #4CAF50;
+ border-color:  #523426;
  outline: none;
  }
 
@@ -281,7 +281,7 @@ nav li:first-child{
           }
 
 .success-message {
-    color: green;
+    color:  #523426;
     font-size: 1rem;
     margin-top: 15px;
     display: none;
