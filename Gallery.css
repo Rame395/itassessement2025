@@ -42,7 +42,7 @@ nav ul{
 }
 
 nav a{
-    padding:0 30px;
+    padding:0 22px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -113,6 +113,22 @@ nav li:first-child{
 }
 .icon{
     gap: 5px;
+}
+
+
+.Glry a{
+    height: 35px;
+    /* width: 110px; */
+    background-color: #4b3425;
+    color:white;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.Glry a:hover{
+    background:#5a3e2c ;
+    color:white;
+    text-decoration: none;
 }
 
 @media(max-width: 950px){

@@ -28,7 +28,7 @@
 
             <ul>
                 <li class="logo"><a href="1.index.html" class="namesta-logo"><img src="image-section/logo.png" alt="logo"></a></li>
-                <li class="hideOnMobile"><a href="1.index.html">Home</a></li>
+                <li class="hideOnMobile home"><a href="1.index.html">Home</a></li>
                 <li class="hideOnMobile"><a href="About_us.html" target="_blank">About US</a></li>
                 <li class="hideOnMobile"> <a href="Gallery.html" target="_blank">Gallery </a></li>
                 <li class="hideOnMobile"><a href="Menu.html" target="_blank">Menu</a></li>
@@ -154,7 +154,8 @@
     </div>
 
     <script>
-        let nextBtn = document.querySelector('.next')
+let current = 0;
+let nextBtn = document.querySelector('.next')
 let prevBtn = document.querySelector('.prev')
 
 let slider = document.querySelector('.hero-container')
@@ -318,9 +319,7 @@ setInterval(() => {
 </div>
 </div>
 </section>
-<div class="Gallery">
-     <a href="Gallery.html"><button>See More</button></a>
-</div>
+
 
 
 

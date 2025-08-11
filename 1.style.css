@@ -21,10 +21,10 @@ nav{
     width: 100%;
     box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
     background-color: #f7f1e4;
-   
     position: fixed;
     top:0px;
     z-index: 999;
+   
     
     
 }
@@ -40,7 +40,7 @@ nav ul{
 }
 
 nav a{
-    padding:0 30px;
+    padding:0 22px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -112,6 +112,21 @@ nav li:first-child{
 .icon{
     gap: 5px;
 }
+.home a{
+    height: 35px;
+    background-color: #4b3425;
+    color:white;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.home a:hover{
+    background:#5a3e2c ;
+    color:white;
+    text-decoration: none;
+    
+}
+    
 
 @media(max-width: 950px){
     .hideOnMobile{

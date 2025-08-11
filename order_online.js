@@ -95,7 +95,7 @@ function addToCart(foodCard) {
         cartItems.push({
             name,
             price,
-            quantity: 1,
+            quantity: 0,
             Image: imgSrc
         });
     }

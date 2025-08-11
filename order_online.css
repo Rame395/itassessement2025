@@ -51,7 +51,7 @@ nav ul{
 }
 
 nav a{
-    padding:0 30px;
+    padding:0 22px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -133,6 +133,21 @@ nav li:first-child{
     padding: 2px 4px;
     border-radius: 50%;
     margin-left: 0px;
+}
+
+.order-on a{
+    height: 35px;
+    width: 135px;
+    background-color: #4b3425;
+    color:white;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.order-on a:hover{
+    background:#5a3e2c ;
+    color:white;
+    text-decoration: none;
 }
 
 @media(max-width: 950px){

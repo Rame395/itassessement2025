@@ -40,7 +40,7 @@ nav li:first-child {
 }
 
 nav a {
-    padding: 0 20px;
+    padding: 0 22px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -111,6 +111,24 @@ nav a:hover {
 .icon {
     gap: 5px;
 }
+
+
+.sgn-up a{
+    height: 35px;
+    /* width: 135px; */
+    background-color: #4b3425;
+    color:white;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.sgn-up a:hover{
+    background:#5a3e2c ;
+    color:white;
+    text-decoration: none;
+}
+
+
 
 .body-logo{
     position: absolute;
